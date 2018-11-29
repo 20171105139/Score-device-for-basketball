@@ -11,9 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     var temp : Int = 0
+    var temp1 : Int = 0
     var sum : Int = 0
+    var sum1 : Int = 0
     var calFlag : Int = 0
     var i : Int = 0
+    
     
     @IBOutlet weak var result1: UITextField!
     
@@ -44,24 +47,6 @@ class ViewController: UIViewController {
         sum = temp + 3
         result1.text! = "\(sum)"
         
-        /*temp = Int(result1.text!)!
-        if(i == 0)
-        {
-            result1.text = ""
-            sum = temp + 3
-        }
-        i=i+1
-        if(i == 2)
-        {
-            sum = temp + 3
-            result1.text = ""
-        }
-        i=1
-        
-        sum = sum + Int(result1.text!)!
-        result1.text! = "\(sum)"
- */
-
     }
     
     
@@ -78,7 +63,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func two_score1_add(_ sender: Any) {
+        temp = Int(result1.text!)!
+        result1.text = ""
+        sum = temp + 2
+        result1.text! = "\(sum)"
     }
+    
     
     @IBAction func shot1(_ sender: Any) {
         if calFlag == 1 {
@@ -92,11 +82,18 @@ class ViewController: UIViewController {
     
     
     @IBAction func shot1_add(_ sender: Any) {
+        temp = Int(result1.text!)!
+        result1.text = ""
+        sum = temp + 1
+        result1.text! = "\(sum)"
         
     }
     
     @IBAction func reduce1(_ sender: Any) {
-        
+        temp = Int(result1.text!)!
+        result1.text = ""
+        sum = temp - 1
+        result1.text! = "\(sum)"
     }
     
     
@@ -107,7 +104,7 @@ class ViewController: UIViewController {
     
     @IBAction func three_score2(_ sender: Any) {
         if calFlag == 1 {
-            result2.text = result1.text!+"3"
+            result2.text = result2.text!+"3"
         }
         else {
             result2.text = "3"
@@ -116,12 +113,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func three_score2_add(_ sender: Any) {
-        
+        temp1 = Int(result2.text!)!
+        result2.text = ""
+        sum1 = temp1 + 3
+        result2.text! = "\(sum1)"
     }
     
     @IBAction func two_score2(_ sender: Any) {
         if calFlag == 1 {
-            result2.text = result1.text!+"2"
+            result2.text = result2.text!+"2"
         }
         else {
             result2.text = "2"
@@ -130,12 +130,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func two_score2_add(_ sender: Any) {
+        temp1 = Int(result2.text!)!
+        result2.text = ""
+        sum1 = temp1 + 2
+        result2.text! = "\(sum1)"
     }
     
     
     @IBAction func shot2(_ sender: Any) {
         if calFlag == 1 {
-            result2.text = result1.text!+"1"
+            result2.text = result2.text!+"1"
         }
         else {
             result2.text = "1"
@@ -144,10 +148,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func shot2_add(_ sender: Any) {
-        
+        temp1 = Int(result2.text!)!
+        result2.text = ""
+        sum1 = temp1 + 1
+        result2.text! = "\(sum1)"
     }
     
     @IBAction func reduce2(_ sender: Any) {
+        temp1 = Int(result2.text!)!
+        result2.text = ""
+        sum1 = temp1 - 1
+        result2.text! = "\(sum1)"
     }
     
     
