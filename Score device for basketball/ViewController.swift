@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var i : Int = 0
     
     
+    @IBOutlet weak var CurrentTime: UILabel!
+
     @IBOutlet weak var result1: UITextField!
     
     @IBOutlet weak var result2: UITextField!
@@ -27,6 +29,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var date = NSDate()
+        
+        var dateformatter = DateFormatter()
+        
+        dateformatter.dateFormat = "yyyy-MM-ddHH:mm:ss"
+        
+        var strNowTime = dateformatter.string(from: date as Date) as String
+        
+        CurrentTime.text = strNowTime;
+        
+        
+
+        
+        
     }
     
     
