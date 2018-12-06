@@ -29,18 +29,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         var date = NSDate()
         
         var dateformatter = DateFormatter()
         
-        dateformatter.dateFormat = "yyyy-MM-ddHH:mm:ss"
+        dateformatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
         var strNowTime = dateformatter.string(from: date as Date) as String
         
         CurrentTime.text = strNowTime;
         
-        
-
         
         
     }
