@@ -14,10 +14,26 @@ class ViewController: UIViewController {
     var temp1 : Int = 0
     var temp2 : Int = 0
     var temp3 : Int = 0
+    var temp4 : Int = 0
+    var temp5 : Int = 0
+    var temp6 : Int = 0
+    var temp7 : Int = 0
+    var temp8 : Int = 0
+    var temp9 : Int = 0
+    var temp10 : Int = 0
+    var temp11 : Int = 0
     var sum : Int = 0
     var sum1 : Int = 0
     var sum2 : Int = 0
     var sum3 : Int = 0
+    var sum4 : Int = 0
+    var sum5 : Int = 0
+    var sum6 : Int = 0
+    var sum7 : Int = 0
+    var sum8 : Int = 0
+    var sum9 : Int = 0
+    var sum10 : Int = 0
+    var sum11 : Int = 0
     var calFlag : Int = 0
     var i : Int = 0
     var count :Int = 0
@@ -52,6 +68,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var result11: UITextField!
     
+    @IBOutlet weak var result12: UITextField!
+    
+    @IBOutlet weak var result13: UITextField!
+    
+    @IBOutlet weak var result14: UITextField!
+    
+    @IBOutlet weak var result15: UITextField!
+    
+    @IBOutlet weak var result16: UITextField!
+    
+    @IBOutlet weak var result17: UITextField!
+    
+    @IBOutlet weak var result18: UITextField!
+    
+    @IBOutlet weak var result19: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -70,6 +102,10 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func START(_ sender: Any) {
+        result1.text = result1.text!+"0"
+        result2.text = result2.text!+"0"
+    }
     
     @IBAction func threescore1(_ sender: Any) {
         if calFlag == 1 {
@@ -143,10 +179,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func delete1(_ sender: Any) {
-        result1.text = ""
-        result4.text = ""
-        result5.text = ""
-        result6.text = ""
+        result1.text = "0"
+        result4.text = "0"
+        result5.text = "0"
+        result6.text = "0"
+        result10.text = ""
+        result12.text = ""
+        result14.text = ""
+        result16.text = ""
+        result18.text = ""
     }
     
     
@@ -217,10 +258,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func delete2(_ sender: Any) {
-        result2.text = ""
-        result7.text = ""
-        result8.text = ""
-        result9.text = ""
+        result2.text = "0"
+        result7.text = "0"
+        result8.text = "0"
+        result9.text = "0"
+        result11.text = ""
+        result13.text = ""
+        result15.text = ""
+        result17.text = ""
+        result19.text = ""
     }
     
     
@@ -246,6 +292,77 @@ class ViewController: UIViewController {
         result11.text! = "\(sum3)"
     }
     
+    @IBAction func Foul(_ sender: Any) {
+        result12.text = result12.text!+"0"
+        result13.text = result13.text!+"0"
+    }
+    
+    @IBAction func Foul1(_ sender: Any) {
+        temp4 = Int(result12.text!)!
+        sum4 = temp4 + 1
+        result12.text! = "\(sum4)"
+    }
+    
+    @IBAction func Foul2(_ sender: Any) {
+        temp5 = Int(result13.text!)!
+        sum5 = temp5 + 1
+        result13.text! = "\(sum5)"
+    }
+    
+    @IBAction func Board(_ sender: Any) {
+        result14.text = result14.text!+"0"
+        result15.text = result15.text!+"0"
+    }
+    @IBAction func Board1(_ sender: Any) {
+        temp6 = Int(result14.text!)!
+        sum6 = temp6 + 1
+        result14.text! = "\(sum6)"
+    }
+    
+    @IBAction func Board2(_ sender: Any) {
+        temp7 = Int(result15.text!)!
+        sum7 = temp7 + 1
+        result15.text! = "\(sum7)"
+    }
+    
+    @IBAction func Assist(_ sender: Any) {
+        result16.text = result16.text!+"0"
+        result17.text = result17.text!+"0"
+    }
+    
+    @IBAction func Assist1(_ sender: Any) {
+        temp8 = Int(result16.text!)!
+        sum8 = temp8 + 1
+        result16.text! = "\(sum8)"
+    }
+    
+    @IBAction func Assist2(_ sender: Any) {
+        temp9 = Int(result17.text!)!
+        sum9 = temp9 + 1
+        result17.text! = "\(sum9)"
+    }
+    
+    @IBAction func Steal(_ sender: Any) {
+        result18.text = result18.text!+"0"
+        result19.text = result19.text!+"0"
+    }
+    
+    @IBAction func Steal1(_ sender: Any) {
+        temp10 = Int(result18.text!)!
+        sum10 = temp10 + 1
+        result18.text! = "\(sum10)"
+    }
+    
+    @IBAction func Steal2(_ sender: Any) {
+        temp11 = Int(result19.text!)!
+        sum11 = temp11 + 1
+        result19.text! = "\(sum11)"
+    }
+    
+    
+    
+    
+
     
 }
 
