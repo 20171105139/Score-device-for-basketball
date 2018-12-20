@@ -271,7 +271,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func welcome(_ sender: Any) {
-        result3.text = result3.text!+"友谊第一，比赛第二！"
+        result3.text = result3.text!+"忘掉你的失败，但不要忘记你的胜利！"
     }
     
     @IBAction func Start(_ sender: Any) {
